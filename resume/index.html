@@ -4,26 +4,116 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Resume</title>
 </head>
 <body>
     <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../projects/index.html">Projects</a></li>
-          <li><a href="index.html">Contact</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+          <li><a href="../index.html">Resume</a></li>
           <li><a href="https://github.com/SupriyaaChordia" target="_blank">GitHub</a></li>
         </ul>
     </nav>
-    <h1>Contact</h1>
-    <form action="mailto:schordia@ucsd.edu" method="POST" enctype="text/plain">
-        <label>Email</label>
-        <input name="email" type="email">
-        <label>Subject</label>
-        <input name="subject" type="text">
-        <label>Your Message</label>
-        <textarea name="body"></textarea>
-        <button>Submit</button>
-    </form>
+    <header>
+        <h1>Supriyaa Chordia</h1>
+        <p>
+            <a href="mailto:schor@uc.edu">schor@uc.edu</a> | 
+            <a href="https://linkedin.com/in/s">linkedin.com/in/s</a> | 
+            <a href="https://github.com/schordias">github.com/schordias</a> | 
+            <span>123-456-78990</span>
+        </p>
+    </header>
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Southwestern University</strong><br>
+                <em>Bachelor of Arts in Computer Science, Minor in Business</em><br>
+                <time datetime="2018-08-01">Aug. 2018</time> -- <time datetime="2021-05-01">May 2021</time>
+            </li>
+            <li>
+                <strong>Blinn College</strong><br>
+                <em>Associate's in Liberal Arts</em><br>
+                <time datetime="2014-08-01">Aug. 2014</time> -- <time datetime="2018-05-01">May 2018</time>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Experience</h2>
+        <article>
+            <header>
+                <h3>Undergraduate Research Assistant</h3>
+                <p><em>Texas A&M University</em>, College Station, TX | <time datetime="2020-06-01">June 2020</time> -- Present</p>
+            </header>
+            <ul>
+                <li>Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems.</li>
+                <li>Developed a full-stack web application using Flask, React, PostgreSQL, and Docker to analyze GitHub data.</li>
+                <li>Explored ways to visualize GitHub collaboration in a classroom setting.</li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h3>Information Technology Support Specialist</h3>
+                <p><em>Southwestern University</em>, Georgetown, TX | <time datetime="2018-09-01">Sep. 2018</time> -- Present</p>
+            </header>
+            <ul>
+                <li>Communicate with managers to set up campus computers used on campus.</li>
+                <li>Assess and troubleshoot computer problems brought by students, faculty, and staff.</li>
+                <li>Maintain upkeep of computers, classroom equipment, and 200 printers across campus.</li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h3>Artificial Intelligence Research Assistant</h3>
+                <p><em>Southwestern University</em>, Georgetown, TX | <time datetime="2019-05-01">May 2019</time> -- <time datetime="2019-07-01">July 2019</time></p>
+            </header>
+            <ul>
+                <li>Explored methods to generate video game dungeons based off of <em>The Legend of Zelda</em>.</li>
+                <li>Developed a game in Java to test the generated dungeons.</li>
+                <li>Contributed 50K+ lines of code to an established codebase via Git.</li>
+                <li>Conducted a human subject study to determine which video game dungeon generation technique is enjoyable.</li>
+                <li>Wrote an 8-page paper and gave multiple presentations on-campus.</li>
+                <li>Presented virtually to the World Conference on Computational Intelligence.</li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <article>
+            <header>
+                <h3>Gitlytics</h3>
+                <p><em>Python, Flask, React, PostgreSQL, Docker</em> | <time datetime="2020-06-01">June 2020</time> -- Present</p>
+            </header>
+            <ul>
+                <li>Developed a full-stack web application using Flask serving a REST API with React as the frontend.</li>
+                <li>Implemented GitHub OAuth to get data from user’s repositories.</li>
+                <li>Visualized GitHub data to show collaboration.</li>
+                <li>Used Celery and Redis for asynchronous tasks.</li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <h3>Simple Paintball</h3>
+                <p><em>Spigot API, Java, Maven, TravisCI, Git</em> | <time datetime="2018-05-01">May 2018</time> -- <time datetime="2020-05-01">May 2020</time></p>
+            </header>
+            <ul>
+                <li>Developed a Minecraft server plugin to entertain kids during free time for a previous job.</li>
+                <li>Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review.</li>
+                <li>Implemented continuous delivery using TravisCI to build the plugin upon new a release.</li>
+                <li>Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin.</li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages</strong>: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R</li>
+            <li><strong>Frameworks</strong>: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI</li>
+            <li><strong>Developer Tools</strong>: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse</li>
+            <li><strong>Libraries</strong>: pandas, NumPy, Matplotlib</li>
+        </ul>
+    </section>
 </body>
 </html>
