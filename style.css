@@ -111,8 +111,9 @@ h1, h2, h3, h4, h5, h6 {
 body.resume {
   background-image: url("images/resume_bg.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 3rem;
 }
 
 body.resume header {
@@ -122,6 +123,7 @@ body.resume header {
 body.resume h1 {
   line-height: 0.5;
   text-wrap: balance;
+  white-space: nowrap;
 }
 
 body.resume p {
@@ -130,5 +132,6 @@ body.resume p {
 }
 body.resume section {
   padding: 1em;
+
   line-height: 2em;
 }
