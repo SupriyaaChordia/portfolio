@@ -109,11 +109,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body.resume {
-  background-image: url("../images/resume_bg.jpg");
+  background-image: url("images/resume_bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 3em;
 }
 
 body.resume header {
@@ -132,8 +131,4 @@ body.resume p {
 body.resume section {
   padding: 1em;
   line-height: 2em;
-}
-
-body {
-  outline: 5px solid red;
 }
