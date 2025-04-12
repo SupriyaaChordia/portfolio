@@ -133,3 +133,7 @@ body.resume section {
   padding: 1em;
   line-height: 2em;
 }
+
+body {
+  outline: 5px solid red;
+}
