@@ -24,9 +24,10 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
     // next step: create link and add it to nav
+    nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
 }
 
-nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
+
 
 // Create link and add it to nav
 
