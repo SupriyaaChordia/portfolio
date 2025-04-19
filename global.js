@@ -12,7 +12,6 @@ function $$(selector, context = document) {
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  // Local server
   : "/website/";         // GitHub Pages repo name
-url = !url.startsWith('http') ? BASE_PATH + url : url;
 
 let pages = [
 { url: '', title: 'Home' },
@@ -27,6 +26,7 @@ document.body.prepend(nav);
 
 for (let p of pages) {
     let url = p.url;
+    url = !url.startsWith('http') ? BASE_PATH + url : url;
     let title = p.title;
     // Create link and add it to nav
     let a = document.createElement('a');
