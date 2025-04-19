@@ -9,6 +9,11 @@ function $$(selector, context = document) {
 //   );
 //   currentLink?.classList.add('current');
 
+const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+  ? "/"                  // Local server
+  : "/website/";         // GitHub Pages repo name
+url = !url.startsWith('http') ? BASE_PATH + url : url;
+
 let pages = [
 { url: '', title: 'Home' },
 { url: 'projects/', title: 'Projects' },
@@ -30,8 +35,4 @@ for (let p of pages) {
     nav.append(a);
 }
 
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  // Local server
-  : "/website/";         // GitHub Pages repo name
-url = !url.startsWith('http') ? BASE_PATH + url : url;
 
