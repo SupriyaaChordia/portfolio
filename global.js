@@ -18,7 +18,7 @@ let pages = [
 { url: 'projects/', title: 'Projects' },
 { url: 'resume/', title: 'Resume' },
 { url: 'contact/', title: 'Contact' },
-{ url: 'https://github.com/SupriyaaChordia', title: 'GitHub' }
+{ url: 'https://github.com/SupriyaaChordia/portfolio', title: 'GitHub' }
 ];
 
 let nav = document.createElement('nav');
@@ -36,12 +36,9 @@ for (let p of pages) {
         'current',
         a.host === location.host && a.pathname === location.pathname,
       );
-    // a.toggleAttribute('target', a.host !== location.host);
-    // a.toggleAttribute('rel', a.host !== location.host);
     if (a.host !== location.host) {
         a.target = "_blank"; // opens in new tab ✅
         a.rel = "noopener noreferrer"; // security best practice ✅
       }
     nav.append(a);
 }
-
