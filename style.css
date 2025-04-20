@@ -133,8 +133,21 @@ body.resume p {
   margin: 0;
   padding: 0;
 }
+
 body.resume section {
   padding: 1em;
 
   line-height: 2em;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
+
+input, textarea, button, select {
+  font: inherit;
 }
