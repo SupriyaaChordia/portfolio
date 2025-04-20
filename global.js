@@ -36,8 +36,12 @@ for (let p of pages) {
         'current',
         a.host === location.host && a.pathname === location.pathname,
       );
-    a.toggleAttribute('target', a.host !== location.host);
-    a.toggleAttribute('rel', a.host !== location.host);
+    // a.toggleAttribute('target', a.host !== location.host);
+    // a.toggleAttribute('rel', a.host !== location.host);
+    if (a.host !== location.host) {
+        a.target = "_blank"; // opens in new tab ✅
+        a.rel = "noopener noreferrer"; // security best practice ✅
+      }
     nav.append(a);
 }
 
