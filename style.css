@@ -112,12 +112,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body.resume {
-  background-image: url("images/resume_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: canvas;
   padding: 3rem;
 }
+
 
 body.resume header {
   margin: 1em;
@@ -138,14 +136,6 @@ body.resume section {
   padding: 1em;
 
   line-height: 2em;
-}
-
-/* inside style.css */
-@media (prefers-color-scheme: dark) {
-  body.resume {
-    background-image: none;
-    background-color: #121212;
-  }
 }
 
 .color-scheme {
