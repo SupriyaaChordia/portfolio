@@ -55,16 +55,18 @@ document.body.insertAdjacentHTML(
         </select>
     </label>`,
   );
-  
-/* inside style.css */
-@media (prefers-color-scheme: dark) {
-    body.resume {
-      background-image: none;
-      background-color: #121212;
-    }
+ const select = document.querySelector('.color-scheme select');
+
+
+  select.addEventListener('input', function (event) {
+  console.log('color scheme changed to', event.target.value);
+});
+document.documentElement.style.setProperty('color-scheme', event.target.value);
+
+if ("colorScheme" in localStorage) {
+    const savedScheme = localStorage.colorScheme;
+    document.documentElement.style.setProperty('color-scheme', savedScheme);
+    select.value = savedScheme;
   }
-  
-  
-  
   
   
