@@ -12,10 +12,15 @@ body {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+  /* ... other styles and nested rules ... */
+}
+
+nav {
   display: flex;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 nav a {
