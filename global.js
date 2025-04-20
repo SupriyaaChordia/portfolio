@@ -59,7 +59,11 @@ document.body.insertAdjacentHTML(
 
 if ("colorScheme" in localStorage) {
     const savedScheme = localStorage.colorScheme;
-    document.documentElement.style.setProperty('color-scheme', savedScheme);
+    if (newScheme === "light dark") {
+        document.documentElement.style.removeProperty('color-scheme'); // ✅ Reverts to default
+      } else {
+        document.documentElement.style.setProperty('color-scheme', newScheme);
+      }      
     select.value = savedScheme;
 }
 
