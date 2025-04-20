@@ -151,3 +151,11 @@ body.resume section {
 input, textarea, button, select {
   font: inherit;
 }
+
+/* inside style.css */
+@media (prefers-color-scheme: dark) {
+  body.resume {
+    background-image: none;
+    background-color: #121212;
+  }
+}

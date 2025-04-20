@@ -55,3 +55,16 @@ document.body.insertAdjacentHTML(
         </select>
     </label>`,
   );
+  
+/* inside style.css */
+@media (prefers-color-scheme: dark) {
+    body.resume {
+      background-image: none;
+      background-color: #121212;
+    }
+  }
+  
+  
+  
+  
+  
