@@ -74,6 +74,7 @@ select.addEventListener("input", function (event) {
     try {
       // Fetch the JSON file from the given URL
       const response = await fetch(url);
+      console.log(response)
       if (!response.ok) {
         throw new Error(`Failed to fetch projects: ${response.statusText}`);
       }
