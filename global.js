@@ -82,4 +82,4 @@ select.addEventListener("input", function (event) {
       console.error('Error fetching or parsing JSON data:', error);
     }
   }
-  fetchJSON('/lib/projects.json');
+  fetchJSON('lib/projects.json');
