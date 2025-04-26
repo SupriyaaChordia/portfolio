@@ -160,3 +160,9 @@ input, textarea, button, select {
 #profile-stats dd {
   grid-row: 2;
 }
+
+.projects img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
