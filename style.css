@@ -161,7 +161,7 @@ input, textarea, button, select {
   grid-row: 2;
 }
 
-.projects img {
+img {
   width: 100%;
   height: auto;
   object-fit: cover;
