@@ -1,62 +1,75 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laboriosam eum magni tempore. Saepe, magnam soluta voluptatem voluptate vel quia iure impedit pariatur expedita odit itaque mollitia eos reiciendis delectus."
+      "title": "Exploring the Relationships Between The Calories in a Recipe vs. the Average Rating",
+      "year": "2025",
+      "image": "https://unsplash.com/photos/a-plate-of-food-bgKVq9xXfBU",
+      "description": "Exploring the relationship between nutrients and ratings in food recipes offers invaluable insights for both health-conscious individuals and culinary enthusiasts. While the nutritional value of food is dependent on a variety of nutrients, our analysis will specifically consider calorie count, as it is a common nutrition-tracking method. We aimed to explore whether the calorie count of the food makes the recipe more or less appealing to people based on its average rating."
     },
     {
-        "title": "Voluptatibus error perspiciatis architecto.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Libero magni temporibus illo perferendis rerum saepe, tempora, ad voluptas cumque error officiis nemo distinctio neque nulla odio laborum doloribus architecto fuga unde voluptates esse nam! Earum hic pariatur enim!"
+      "title": "N-Gram language Model",
+      "year": "2025",
+      "image": "https://unsplash.com/photos/a-close-up-of-a-number-of-wooden-letters-NBQDiif1_LI",
+      "description": "Explored how various borrower characteristics are related to one another, in an attempt to better understand the complexity behind loans."
     },
     {
-        "title": "Quaerat asperiores ex quo.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eveniet voluptate nemo fuga odio corporis reprehenderit at, aut repellat? Nam vel blanditiis facere illum totam fuga sequi! Qui aspernatur corporis id dolorum eum ea sit impedit nostrum nobis nam."
+      "title": "Loan Applications",
+      "year": "2025",
+      "image": "https://unsplash.com/photos/a-person-stacking-coins-on-top-of-a-table-jpqyfK7GB4w",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "Facilis ad cumque neque?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Deserunt similique, dolor sunt soluta optio molestias sit dolore, voluptas ab, minus inventore. Sequi nobis ipsa expedita a eum! Aspernatur amet aliquid et, perferendis sequi repellendus. Odio enim odit facilis?"
+      "title": "MTS Bus Transit Network Analysis",
+      "year": "2025",
+      "image": "https://unsplash.com/photos/the-interior-of-a-public-transit-bus-with-empty-seats-BOAJwI3WXKs",
+      "description": "Conducted a detailed analysis of the bus transit network, allowing for visualization of routes, optimization of travel times, and understanding of transit patterns."
     },
     {
-        "title": "Quam, exercitationem? Amet, quia.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ab maxime architecto, odit corporis sapiente enim totam doloribus perferendis. Atque, distinctio a vero sapiente nihil eius facere magnam iusto. Fugit accusamus voluptates autem tempora officia labore. Accusamus, autem dignissimos."
+      "title": "Image Transformations",
+      "year": "2024",
+      "image": "https://unsplash.com/photos/person-holding-lens-uAzUg6_tMCo",
+      "description": "Implemented core image processing functionality in Python, including brightness adjustment, rotation, blurring, and K-Nearest Neighbors (KNN) classification of images based on pixel similarity."
     },
     {
-        "title": "Cumque possimus nam ipsam!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Cum reiciendis, beatae incidunt sunt velit corporis odio et modi qui officiis enim delectus natus explicabo fugit ex soluta illo odit quae, quaerat a repudiandae tenetur doloremque magni? Ducimus, voluptatem."
+      "title": "The Great British Bake Off Analysis",
+      "year": "2023",
+      "image": "https://unsplash.com/photos/a-table-topped-with-lots-of-cakes-and-cupcakes-oOExQQxPoTo",
+      "description": "Analyzed and visualized data from a cooking competition show using Python, exploring contestant trends, recipe patterns, and challenge difficulty through exploratory data analysis (EDA), text generation, and statistical comparisons."
     },
     {
-        "title": "Eveniet, laboriosam perspiciatis. Cum.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Repudiandae sit tenetur dolorum corporis velit, optio minima molestiae, vitae laboriosam neque sed! Ratione deleniti, necessitatibus minus, quidem quia a rem assumenda, dignissimos sunt enim rerum doloremque soluta repellat quasi!"
+      "title": "Taylor Swift Analysis and Reccommendation Tool",
+      "year": "2023",
+      "image": "https://unsplash.com/photos/red-iphone-5-c-on-black-textile-tF-wSmez9ag",
+      "description": "Developed data visualizations, a song recommendation engine, lyric search functionality, and keyword analysis for Taylor Swift’s discography."
     },
     {
-        "title": "Cum dolorum nihil ut.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Tempora illum recusandae iusto optio, libero quam quo eius explicabo, corporis nesciunt ipsam. Ullam quisquam repudiandae et numquam quasi nostrum fugit optio saepe, vel sed ad perspiciatis aperiam dolores doloribus?"
+      "title": "Nutritional Analysis of Grocery Stores",
+      "year": "2025",
+      "image": "https://unsplash.com/photos/a-grocery-store-shelf-filled-with-lots-of-food-n3n6yy2KgX4",
+      "description": "Performed a nutritional analysis of food products in three different grocery stores - Target, Walmart, and Whole Foods."
     },
     {
-        "title": "Repudiandae quaerat libero neque!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Doloremque, autem dignissimos iste facilis, maiores culpa quod incidunt tempora animi nostrum fuga aliquid sapiente porro nobis numquam voluptas amet voluptate illo perferendis dolor velit possimus! Quibusdam ratione vitae harum."
+      "title": "Environmental Expenditures and Climate Readiness",
+      "year": "2025",
+      "image": "https://unsplash.com/photos/white-and-red-tower-under-blue-sky-oQEdDIMEIlc",
+      "description": "Compared data visualizations supporting opposing positions on the relationship between a government's annual environmental expenditure and a country's climate readiness."
     },
     {
-        "title": "Unde sunt delectus nihil.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nobis tenetur incidunt architecto. Ipsa fugiat fuga iste dolorem repudiandae! Aliquam esse reprehenderit quia excepturi tempora neque architecto incidunt repudiandae temporibus veniam animi, doloremque non ullam placeat illo perspiciatis enim."
+      "title": "Lorem ipsum dolor sit.",
+      "year": "2020",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "Voluptates rerum recusandae unde!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nesciunt accusamus sit alias labore optio provident necessitatibus possimus quas fugiat sint, sapiente perferendis fuga distinctio nihil ea, sunt non voluptate quaerat eius expedita ab quos aliquam dolores! Architecto, molestiae?"
+      "title": "Lorem ipsum dolor sit.",
+      "year": "2024",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     },
     {
-        "title": "Ipsum mollitia laborum minus.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ad aspernatur odio facilis, ratione reiciendis ea expedita aliquam voluptate asperiores cupiditate vel totam praesentium nemo exercitationem sapiente temporibus, debitis delectus modi vero minima tempora eum consequatur minus facere? Tempore."
+      "title": "Lorem ipsum dolor sit.",
+      "year": "2023",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
     }
-]
+  ]
+  
