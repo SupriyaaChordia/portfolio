@@ -26,7 +26,7 @@
     {
       "title": "Image Transformations",
       "year": "2024",
-      "image": "https://plus.unsplash.com/premium_photo-1676573201639-79bb6d344ffd?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://plus.unsplash.com/premium_photo-1736056427064-9b1c015a71f7?q=80&w=2604&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Implemented core image processing functionality in Python, including brightness adjustment, rotation, blurring, and K-Nearest Neighbors (KNN) classification of images based on pixel similarity."
     },
     {
