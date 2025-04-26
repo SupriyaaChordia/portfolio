@@ -2,20 +2,19 @@
     {
       "title": "Exploring the Relationships Between The Calories in a Recipe vs. the Average Rating",
       "year": "2025",
-      "image": "https://unsplash.com/photos/a-plate-of-food-bgKVq9xXfBU",
+      "image": "https://images.unsplash.com/photo-1670164745494-30747c120652?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Exploring the relationship between nutrients and ratings in food recipes offers invaluable insights for both health-conscious individuals and culinary enthusiasts. While the nutritional value of food is dependent on a variety of nutrients, our analysis will specifically consider calorie count, as it is a common nutrition-tracking method. We aimed to explore whether the calorie count of the food makes the recipe more or less appealing to people based on its average rating."
     },
     {
       "title": "N-Gram language Model",
       "year": "2025",
-      "image": "https://unsplash.com/photos/a-close-up-of-a-number-of-wooden-letters-NBQDiif1_LI",
+      "image": "https://plus.unsplash.com/premium_photo-1666739032615-ecbd14dfb543?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Explored how various borrower characteristics are related to one another, in an attempt to better understand the complexity behind loans."
     },
     {
       "title": "Loan Applications",
       "year": "2025",
-      "image": "https://unsplash.com/photos/a-person-stacking-coins-on-top-of-a-table-jpqyfK7GB4w",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+      "image": "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "title": "MTS Bus Transit Network Analysis",
@@ -26,31 +25,30 @@
     {
       "title": "Image Transformations",
       "year": "2024",
-      "image": "https://unsplash.com/photos/person-holding-lens-uAzUg6_tMCo",
+      "image": "https://plus.unsplash.com/premium_photo-1676573201639-79bb6d344ffd?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Implemented core image processing functionality in Python, including brightness adjustment, rotation, blurring, and K-Nearest Neighbors (KNN) classification of images based on pixel similarity."
     },
     {
       "title": "The Great British Bake Off Analysis",
       "year": "2023",
-      "image": "https://unsplash.com/photos/a-table-topped-with-lots-of-cakes-and-cupcakes-oOExQQxPoTo",
-      "description": "Analyzed and visualized data from a cooking competition show using Python, exploring contestant trends, recipe patterns, and challenge difficulty through exploratory data analysis (EDA), text generation, and statistical comparisons."
+      "image": "https://images.unsplash.com/photo-1683395826489-911a209cbca8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "title": "Taylor Swift Analysis and Reccommendation Tool",
       "year": "2023",
-      "image": "https://unsplash.com/photos/red-iphone-5-c-on-black-textile-tF-wSmez9ag",
+      "image": "https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=2769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Developed data visualizations, a song recommendation engine, lyric search functionality, and keyword analysis for Taylor Swift’s discography."
     },
     {
       "title": "Nutritional Analysis of Grocery Stores",
       "year": "2025",
-      "image": "https://unsplash.com/photos/a-grocery-store-shelf-filled-with-lots-of-food-n3n6yy2KgX4",
+      "image": "https://images.unsplash.com/photo-1653222470896-ebc806213551?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Performed a nutritional analysis of food products in three different grocery stores - Target, Walmart, and Whole Foods."
     },
     {
       "title": "Environmental Expenditures and Climate Readiness",
       "year": "2025",
-      "image": "https://unsplash.com/photos/white-and-red-tower-under-blue-sky-oQEdDIMEIlc",
+      "image": "https://images.unsplash.com/photo-1585252155261-cff31944d781?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "Compared data visualizations supporting opposing positions on the relationship between a government's annual environmental expenditure and a country's climate readiness."
     },
     {
