@@ -93,7 +93,10 @@ select.addEventListener("input", function (event) {
       article.innerHTML = `
       <${headingLevel}>${p.title}</${headingLevel}>
       <img src="${p.image}" alt="${p.title}">
+      <div>
       <p>${p.description}</p>
+      <span class = "projectyear"${p.year}</span>
+      </div>
       `;
       containerElement.appendChild(article);
     }

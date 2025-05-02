@@ -166,3 +166,9 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+.project-year {
+  font-size: 0.9em;
+  font-family: Baskerville;
+  font-variant-numeric: oldstyle-nums
+}
