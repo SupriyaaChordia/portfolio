@@ -95,7 +95,7 @@ select.addEventListener("input", function (event) {
       <img src="${p.image}" alt="${p.title}">
       <div>
       <p>${p.description}</p>
-      <span class = "projectyear"${p.year}</span>
+      <span class = "projectyear">${p.year}</span>
       </div>
       `;
       containerElement.appendChild(article);
