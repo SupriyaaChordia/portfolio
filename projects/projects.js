@@ -164,3 +164,5 @@ searchInput.addEventListener('change', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
+
+renderPieChart(projects);
