@@ -179,21 +179,21 @@ img {
   overflow: visible;
 }
 
-ul.legend .swatch {
+.swatch {
   width: 1em;
   aspect-ratio: 1 / 1;
   background-color: var(--color);
   border-radius: 50%;
   display: inline-block;
-  gap: 0.25em;
-  border: solid 1px var(--border-color);
-  padding: 0.5em;
-  margin: 0.25em;
 }
 
 ul.legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 0.5em;
+  border: solid 1px var(--border-color);
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
 li.legend-item{
