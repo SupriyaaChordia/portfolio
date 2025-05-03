@@ -87,6 +87,7 @@ let searchInput = document.querySelector('.searchBar');
 // });
 
 let selectedIndex = -1;
+let query = '';
 
 function renderPieChart(projectsGiven) {
   // re-calculate rolled data
@@ -130,13 +131,14 @@ function renderPieChart(projectsGiven) {
         .attr('class', (_, idx) => (
           idx === selectedIndex ? 'legend-item selected' : 'legend-item'
         ));
+        let searchProjects = projects.filter((project) => Object.values(project).join('\n').toLowerCase().includes(query))
         if (selectedIndex === -1) {
-          renderProjects(projects, projectsContainer, 'h2');
+          renderProjects(searchProjects, projectsContainer, 'h2');
         } else {
           // TODO: filter projects and project them onto webpage
           // Hint: `.label` might be useful
           let selectedYear = newData[selectedIndex].label;
-          let filteredProjects = projects.filter(
+          let filteredProjects = searchProjects.filter(
             (project) => project.year === selectedYear
           );
           renderProjects(filteredProjects, projectsContainer, 'h2');
@@ -153,10 +155,8 @@ function renderPieChart(projectsGiven) {
   });
   }
 
-// Call this function on page load
-
 searchInput.addEventListener('change', (event) => {
-  let query = event.target.value.toLowerCase();
+  query = event.target.value.toLowerCase();
   let filteredProjects = projects.filter((project) => {
     let values = Object.values(project).join('\n').toLowerCase();
     return values.includes(query);
