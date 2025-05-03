@@ -206,4 +206,6 @@ li.legend-item{
 
 div.container {
   display: flex;
+  gap: 2em; 
+  align-items: flex-start;
 }
