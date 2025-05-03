@@ -38,9 +38,9 @@ nav a:hover {
   display: contents;
 } */
 
-li {
+/* li {
   display: contents;
-}
+} */
 
 a.current {
   text-decoration: none;
@@ -207,5 +207,5 @@ li.legend-item{
 div.container {
   display: flex;
   gap: 2em; 
-  align-items: flex-start;
+  align-items: center;
 }
