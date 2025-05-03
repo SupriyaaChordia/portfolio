@@ -191,7 +191,7 @@ img {
 ul.legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-  gap: 2em;
+  gap: 1.5em;
   border: solid 1px var(--border-color);
   padding: 1 em;
   margin: 0.5em;
