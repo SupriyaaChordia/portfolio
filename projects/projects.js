@@ -125,7 +125,7 @@ function renderPieChart(projectsGiven) {
           .attr('class', (_, idx) => (
           idx === selectedIndex ? 'selected' : null
         ));
-        legend
+        newLegend
         .selectAll('li')
         .attr('class', (_, idx) => (
           idx === selectedIndex ? 'legend-item selected' : 'legend-item'
