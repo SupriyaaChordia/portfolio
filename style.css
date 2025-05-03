@@ -194,7 +194,7 @@ ul.legend {
   gap: 1em;
   border: solid 1px var(--border-color);
   padding: 1 em;
-  margin: 1 em;
+  margin: 0.25 em;
   flex: 1;
 }
 
