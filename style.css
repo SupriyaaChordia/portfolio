@@ -206,6 +206,6 @@ li.legend-item{
 
 div.container {
   display: flex;
-  gap: 1em; 
+  gap: 0.5em; 
   align-items: left; 
 }
