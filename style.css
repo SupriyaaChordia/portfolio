@@ -185,7 +185,10 @@ ul.legend .swatch {
   background-color: var(--color);
   border-radius: 50%;
   display: inline-block;
-  gap: 0.5em;
+  gap: 0.25em;
+  border: solid 1px var(--border-color);
+  padding: 0.5em;
+  margin: 0.25em;
 }
 
 ul.legend {
