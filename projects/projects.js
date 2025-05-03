@@ -18,7 +18,7 @@ let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 let data = [1, 2, 3, 4, 5, 5];
 // let total = 0;
 // let colors = ['gold', 'purple'];
-let colors = d3.scaleOrdinal(d3.schemeTableau10);
+let colors = d3.scaleOrdinal(d3.schemePastel1);
 
 // for (let d of data) {
 //   total += d;
