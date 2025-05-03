@@ -193,7 +193,7 @@ ul.legend {
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
   gap: 1.5em;
   border: solid 1px var(--border-color);
-  padding: 1 em;
+  padding: 1em;
   margin: 0.5em;
   flex: 1;
 }
@@ -208,4 +208,23 @@ div.container {
   display: flex;
   gap: 0.5em; 
   align-items: center;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
 }

@@ -86,6 +86,8 @@ let searchInput = document.querySelector('.searchBar');
 //   renderProjects(filteredProjects, projectsContainer, 'h2');
 // });
 
+let selectedIndex = -1;
+
 function renderPieChart(projectsGiven) {
   // re-calculate rolled data
   let newRolledData = d3.rollups(
@@ -104,18 +106,44 @@ function renderPieChart(projectsGiven) {
   let newArcs = newArcData.map((d) => newArcGenerator(d));
 
   // TODO: clear up paths and legends
-  let newSVG = d3.select('svg');
-  newSVG.selectAll('path').remove();  
+  let svg = d3.select('svg');
+  svg.selectAll('path').remove();
   let newLegend = d3.select('.legend');
   newLegend.selectAll('li').remove();
 
   // update paths and legends, refer to steps 1.4 and 2.2
-newArcs.forEach((arc, index) => {
-  newSVG
-    .append('path')
-    .attr('d', arc)
-    .attr('fill', colors(index));
-});
+  newArcs.forEach((arc, i) => {
+    svg
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', colors(i))
+      .on('click', () => {
+        selectedIndex = selectedIndex === i ? -1 : i;
+  
+        svg
+          .selectAll('path')
+          .attr('class', (_, idx) => (
+          idx === selectedIndex ? 'selected' : null
+        ));
+        legend
+        .selectAll('li')
+        .attr('class', (_, idx) => (
+          idx === selectedIndex ? 'legend-item selected' : 'legend-item'
+        ));
+        if (selectedIndex === -1) {
+          renderProjects(projects, projectsContainer, 'h2');
+        } else {
+          // TODO: filter projects and project them onto webpage
+          // Hint: `.label` might be useful
+          let selectedYear = newData[selectedIndex].label;
+          let filteredProjects = projects.filter(
+            (project) => project.year === selectedYear
+          );
+          renderProjects(filteredProjects, projectsContainer, 'h2');
+        }
+      });
+  });
+  
   newData.forEach((d, idx) => {
     newLegend
       .append('li')
@@ -126,7 +154,6 @@ newArcs.forEach((arc, index) => {
   }
 
 // Call this function on page load
-renderPieChart(projects);
 
 searchInput.addEventListener('change', (event) => {
   let query = event.target.value.toLowerCase();
