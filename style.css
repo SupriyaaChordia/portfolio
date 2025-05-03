@@ -202,3 +202,7 @@ li.legend-item{
   align-items: center;
   gap: 0.25em;
 }
+
+div.container {
+  display: flex
+}
