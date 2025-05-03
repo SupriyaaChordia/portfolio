@@ -17,7 +17,8 @@ let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 // d3.select('svg').append('path').attr('d', arc).attr('fill', 'red');
 let data = [1, 2, 3, 4, 5, 5];
 // let total = 0;
-let colors = ['gold', 'purple'];
+// let colors = ['gold', 'purple'];
+let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
 // for (let d of data) {
 //   total += d;
