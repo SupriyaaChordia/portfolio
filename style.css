@@ -193,7 +193,7 @@ ul.legend {
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
   gap: 2em;
   border: solid 1px var(--border-color);
-  padding: 1.5 em;
+  padding: 1 em;
   margin: 0.5em;
   flex: 1;
 }
@@ -206,6 +206,6 @@ li.legend-item{
 
 div.container {
   display: flex;
-  gap: 0.5em; 
+  gap: 1em; 
   align-items: center;
 }
