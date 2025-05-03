@@ -195,6 +195,7 @@ ul.legend {
   border: solid 1px var(--border-color);
   padding: 0.5em;
   margin: 0.5em;
+  flex: 1;
 }
 
 li.legend-item{
@@ -204,5 +205,5 @@ li.legend-item{
 }
 
 div.container {
-  display: flex
+  display: flex;
 }
