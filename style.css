@@ -201,7 +201,7 @@ ul.legend {
 li.legend-item{
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.25em;
 }
 
 div.container {
