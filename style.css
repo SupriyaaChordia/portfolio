@@ -191,9 +191,9 @@ img {
 ul.legend {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-  gap: 0.5em;
+  gap: 1em;
   border: solid 1px var(--border-color);
-  padding: 0.5em;
+  padding: 1 em;
   margin: 0.5em;
   flex: 1;
 }
@@ -201,11 +201,11 @@ ul.legend {
 li.legend-item{
   display: flex;
   align-items: center;
-  gap: 0.25em;
+  gap: 0.5em;
 }
 
 div.container {
   display: flex;
   gap: 2em; 
-  align-items: center;
+  align-items: center; 
 }
