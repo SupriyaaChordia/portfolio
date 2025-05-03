@@ -41,7 +41,7 @@ let colors = d3.scaleOrdinal(d3.schemeTableau10);
 let sliceGenerator = d3.pie();
 let arcData = sliceGenerator(data);
 let arcs = arcData.map((d) => arcGenerator(d));
-arcs.forEach((arc, idx) => {
+arcs.forEach((arc, index) => {
   d3.select('svg')
     .append('path')
     .attr('d', arc)
