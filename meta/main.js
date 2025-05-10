@@ -45,9 +45,11 @@ function processCommits(data) {
         author,
         date,
         time,
+        timeFrac:
+          datetime.getHours() +
+          datetime.getMinutes() / 60 +
+          datetime.getSeconds() / 3600,
         timezone,
-        datetime,
-        hourFrac: datetime.getHours() + datetime.getMinutes() / 60,
         totalLines: lines.length,
       };
 
