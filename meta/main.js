@@ -10,6 +10,8 @@ async function loadData() {
   }));
 
   return data;
+}
+
 // let commits = d3.groups(data, (d) => d.commit);
 // function processCommits(data) {
 //   return d3
