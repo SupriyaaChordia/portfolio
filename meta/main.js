@@ -15,7 +15,7 @@ async function loadData() {
 
 function processCommits(data) {
   return d3
-    .groups(data, d => d.datetime.toISOString())
+    .groups(data, (d) => d.commit)
     .map(([commit, lines]) => {
       let first = lines[0];
       let { author, date, time, timezone, datetime } = first;
@@ -26,13 +26,15 @@ function processCommits(data) {
         datetime,
         id: commit,
         time,
-        timeFrac:
-          datetime.getHours() +
+        timeFrac: Math.round(
+          (datetime.getHours() +
           datetime.getMinutes() / 60 +
-          datetime.getSeconds() / 3600,
+          datetime.getSeconds() / 3600) * 4
+        ) / 4,
         timezone,
-        totalLines: lines.length,   
-};
+        totalLines: lines.length
+}
+
 
       Object.defineProperty(ret, 'lines', {
         value: lines,
@@ -236,7 +238,7 @@ function brushed(event) {
 function isCommitSelected(commit) { 
   if (!selection) { return false; } const [x0, x1] = selection.map((d) => d[0]); 
   const [y0, y1] = selection.map((d) => d[1]); const x = xScale(commit.datetime); 
-  const y = yScale(commit.hourFrac); return x >= x0 && x <= x1 && y >= y0 && y <= y1; 
+  const y = yScale(commit.timeFrac); return x >= x0 && x <= x1 && y >= y0 && y <= y1; 
 }
 
 function renderSelectionCount(selection) {
