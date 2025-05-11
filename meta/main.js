@@ -159,8 +159,10 @@ function renderScatterPlot(data, commits) {
 
   const dots = svg.append('g').attr('class', 'dots');
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
-  const rScale = d3.scaleLinear().domain([minLines, maxLines]).range([2, 30]); // adjust these values based on your experimentation
-
+  const rScale = d3
+  .scaleSqrt() // Change only this line
+  .domain([minLines, maxLines])
+  .range([2, 30]);
 
 dots
   .selectAll('circle')
@@ -169,6 +171,7 @@ dots
   .attr('cx', (d) => xScale(d.datetime))
   .attr('cy', (d) => yScale(d.timeFrac))
   .attr('r', (d) => rScale(d.totalLines))
+  .attr('fill', 'steelblue')
   .style('fill-opacity', 0.7) // Add transparency for overlapping dots
   .on('mouseenter', (event, commit) => {
     d3.select(event.currentTarget).style('fill-opacity', 1); // Full opacity on hover
@@ -187,6 +190,19 @@ let data = await loadData();
 let commits = processCommits(data);
 renderCommitInfo(data, commits);
 renderScatterPlot(data, commits);
+
+function renderTooltipContent(commit) {
+  const link = document.getElementById('commit-link');
+  const date = document.getElementById('commit-date');
+
+  if (Object.keys(commit).length === 0) return;
+
+  link.href = commit.url;
+  link.textContent = commit.id;
+  date.textContent = commit.datetime?.toLocaleString('en', {
+    dateStyle: 'full',
+  });
+}
 
 function updateTooltipVisibility(isVisible) {
   const tooltip = document.getElementById('commit-tooltip');
