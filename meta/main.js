@@ -158,7 +158,7 @@ function renderScatterPlot(data, commits) {
   const rScale = d3
     .scaleSqrt() 
     .domain([minLines, maxLines])
-    .range([5, 40]);
+    .range([5, 20]);
 
   const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
 
