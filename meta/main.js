@@ -31,12 +31,8 @@ function processCommits(data) {
           datetime.getMinutes() / 60 +
           datetime.getSeconds() / 3600,
         timezone,
-        totalLines: d3.rollup(
-          lines,
-          v => v.length,
-          d => d.file + ':' + d.line
-        ).size
-      };
+        totalLines: lines.length,   
+};
 
       Object.defineProperty(ret, 'lines', {
         value: lines,
@@ -189,7 +185,6 @@ dots
     d3.select(event.currentTarget).style('fill-opacity', 0.7);
     updateTooltipVisibility(false);
   });
-
 }
 
 let data = await loadData();
