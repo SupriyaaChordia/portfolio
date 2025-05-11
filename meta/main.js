@@ -124,8 +124,7 @@ function renderScatterPlot(data, commits) {
   .range([0, width])
   .nice();
 
-  const yScale = d3.scaleSqrt().domain([0, 24]).range([height, 0]);
-
+  const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
   // Update scales with new ranges
   xScale.range([usableArea.left, usableArea.right]);
   yScale.range([usableArea.bottom, usableArea.top]);
