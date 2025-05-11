@@ -167,7 +167,7 @@ dots
   .data(commits)
   .join('circle')
   .attr('cx', (d) => xScale(d.datetime))
-  .attr('cy', (d) => yScale(d.timeframe))
+  .attr('cy', (d) => yScale(d.timeFrac))
   .attr('r', (d) => rScale(d.totalLines))
   .style('fill-opacity', 0.7) // Add transparency for overlapping dots
   .on('mouseenter', (event, commit) => {
