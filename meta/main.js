@@ -1,6 +1,5 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
 
-// Declare global scale variables to be accessible by brushing functions
 let xScale, yScale;
 let commits = [];
 
@@ -36,7 +35,7 @@ function processCommits(data) {
           datetime.getSeconds() / 3600) * 4
         ) / 4,
         timezone,
-        totalLines: lines.length
+        totalLines: d3.sum(lines, d => d.length)
       };
 
       Object.defineProperty(ret, 'lines', {
