@@ -239,17 +239,17 @@ path {
 
 .stats dt {
   grid-row: 1;
-  /* font-size: 0.8rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: oklch(60% 5% 250);
-  margin-bottom: 0.25rem; */
+  margin-bottom: 0.25rem;
 }
 
 .stats dd {
   grid-row: 2;
-  /* font-size: 2.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin: 0;
-  color: oklch(95% 0% 0); */
+  color: oklch(95% 0% 0);
 }
