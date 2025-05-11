@@ -164,6 +164,8 @@ function renderScatterPlot(data, commits) {
   .domain([minLines, maxLines])
   .range([2, 15]);
 
+  const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
+
 dots
   .selectAll('circle')
   .data(commits)
