@@ -250,3 +250,37 @@ path {
   font-weight: 500;
   margin: 0;
 }
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 0;
+}
+
+dl.info dt {
+  grid-row: 1;
+  color: gray;
+  margin: 0;
+}
+
+dl.info dd {
+  grid-row: 2;
+  color: black;
+  margin: 0;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
