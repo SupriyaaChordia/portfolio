@@ -121,7 +121,7 @@ function renderScatterPlot(data, commits) {
     .data(commits)
     .join('circle')
     .attr('cx', (d) => xScale(d.datetime))
-    .attr('cy', (d) => yScale(d.hourFrac))
+    .attr('cy', (d) => yScale(d.timeFrac))
     .attr('r', 5)
     .attr('fill', 'steelblue');
 
