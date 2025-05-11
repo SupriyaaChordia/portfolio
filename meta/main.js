@@ -124,12 +124,10 @@ function renderScatterPlot(data, commits) {
   .range([0, width])
   .nice();
 
-  const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
+const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
   // Update scales with new ranges
   xScale.range([usableArea.left, usableArea.right]);
   yScale.range([usableArea.bottom, usableArea.top]);
-
-  
 
   // Create the axes
   const xAxis = d3.axisBottom(xScale);
@@ -155,6 +153,8 @@ function renderScatterPlot(data, commits) {
   .append('g')
   .attr('class', 'gridlines')
   .attr('transform', `translate(${usableArea.left}, 0)`);
+
+  gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
 
   const dots = svg.append('g').attr('class', 'dots');
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
