@@ -12,26 +12,6 @@ async function loadData() {
   return data;
 }
 
-// let commits = d3.groups(data, (d) => d.commit);
-// function processCommits(data) {
-//   return d3
-//     .groups(data, (d) => d.commit)
-//     .map(([commit, lines]) => {
-//       // Each 'lines' array contains all lines modified in this commit
-//       // All lines in a commit have the same author, date, etc.
-//       // So we can get this information from the first line
-//       let first = lines[0];
-
-//       // What information should we return about this commit?
-//       return {
-//         id: commit,
-//         // ... what else?
-//       };
-//     });
-// }
-
-// let data = await loadData();
-// let commits = processCommits(data);
 
 function processCommits(data) {
   return d3
@@ -64,22 +44,61 @@ function processCommits(data) {
     });
 }
 
+// let data = await loadData();
+// let commits = processCommits(data);
+// console.log(commits);
+
+
+function renderCommitInfo(data, commits) {
+  // Create the dl element
+  const dl = d3.select('#stats').append('dl').attr('class', 'stats');
+
+  // Add total LOC
+  dl.append('dt').html('Total <abbr title="Lines of code">LOC</abbr>');
+  dl.append('dd').text(data.length);
+
+  // Add total commits
+  dl.append('dt').text('Total commits');
+  dl.append('dd').text(commits.length);
+
+   // No of files
+  const numberFiles = d3.group(data, d => d.file).size;
+  dl.append('dt').text('Number of files');
+  dl.append('dd').text(numberFiles);
+
+  // Average file length
+  const fileLengths = d3.rollups(
+    data,
+    v => d3.max(v, d => d.line),
+    d => d.file
+  );
+  const averageFileLength = d3.mean(fileLengths, d => d[1]);
+  dl.append('dt').text('Average file length');
+  dl.append('dd').text(averageFileLength);
+
+  // Average file depth
+  const fileDepths = d3.rollups(
+    data,
+    v => d3.mean(v, d => d.depth),
+    d => d.file
+  );
+  const averageFileDepth = d3.mean(fileDepths, d => d[1]);
+  dl.append('dt').text('Average file depth');
+  dl.append('dd').text(averageFileDepth);
+
+  // Time of day (morning, afternoon, evening, night) that most work is done
+
+  const workByPeriod = d3.rollups(
+    data,
+    (v) => v.length,
+    (d) => new Date(d.datetime).toLocaleString('en', { dayPeriod: 'short' }),
+  );
+  const maxPeriod = d3.greatest(workByPeriod, (d) => d[1])?.[0];
+  dl.append('dt').text('Most active time of day');
+  dl.append('dd').text(maxPeriod);
+}
+
 let data = await loadData();
 let commits = processCommits(data);
-console.log(commits);
 
-// async function loadData() {
-//   const data = await d3.csv('loc.csv', (row) => ({
-//     ...row,
-//     line: Number(row.line), // or just +row.line
-//     depth: Number(row.depth),
-//     length: Number(row.length),
-//     date: new Date(row.date + 'T00:00' + row.timezone),
-//     datetime: new Date(row.datetime),
-//   }));
-
-//   return data;
-// }
-
-// let data = await loadData();
-// console.log(data);
+renderCommitInfo(data, commits);
