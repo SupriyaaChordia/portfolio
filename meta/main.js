@@ -158,10 +158,13 @@ const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
 
   const dots = svg.append('g').attr('class', 'dots');
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
-  const rScale = d3
-  .scaleSqrt() // Change only this line
-  .domain([minLines, maxLines])
-  .range([2, 15]);
+  const cappedLines = sortedCommits.map(d => Math.min(d.totalLines, 50));
+  const [minCapped, maxCapped] = d3.extent(cappedLines);
+
+  const rScale = d3.scaleSqrt()
+    .domain([minCapped, maxCapped])
+    .range([2, 15]);
+
 
   const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
 
