@@ -158,6 +158,7 @@ function renderScatterPlot(data, commits) {
   .attr('transform', `translate(${usableArea.left}, 0)`);
 
   const dots = svg.append('g').attr('class', 'dots');
+
   dots
   .selectAll('circle')
   .data(commits)
@@ -173,8 +174,6 @@ function renderScatterPlot(data, commits) {
     // TODO: Hide the tooltip
   });
 
-
-
   // Create gridlines as an axis with no labels and full-width ticks
   gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
 
@@ -185,15 +184,4 @@ let commits = processCommits(data);
 renderCommitInfo(data, commits);
 renderScatterPlot(data, commits);
 
-function renderTooltipContent(commit) {
-  const link = document.getElementById('commit-link');
-  const date = document.getElementById('commit-date');
 
-  if (Object.keys(commit).length === 0) return;
-
-  link.href = commit.url;
-  link.textContent = commit.id;
-  date.textContent = commit.datetime?.toLocaleString('en', {
-    dateStyle: 'full',
-  });
-}
