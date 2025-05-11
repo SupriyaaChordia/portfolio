@@ -74,7 +74,7 @@ function renderCommitInfo(data, commits) {
   );
   const averageFileLength = d3.mean(fileLengths, d => d[1]);
   dl.append('dt').text('Average file length');
-  dl.append('dd').text(averageFileLength).toFixed(1);
+  dl.append('dd').text(averageFileLength.toFixed(1));
 
   // Average file depth
   const fileDepths = d3.rollups(
@@ -84,7 +84,7 @@ function renderCommitInfo(data, commits) {
   );
   const averageFileDepth = d3.mean(fileDepths, d => d[1]);
   dl.append('dt').text('Average file depth');
-  dl.append('dd').text(averageFileDepth).toFixed(1);
+  dl.append('dd').text(averageFileDepth.toFixed(1));
 
   // Time of day (morning, afternoon, evening, night) that most work is done
 
