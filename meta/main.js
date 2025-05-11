@@ -218,14 +218,6 @@ function updateTooltipPosition(event) {
   tooltip.style.top = `${event.clientY}px`;
 }
 
-function createBrushSelector(svg) {
-// Update brush initialization to listen for events
-svg.call(d3.brush().on('start brush end', brushed));
-
-// Raise dots and everything after overlay
-svg.selectAll('.dots, .overlay ~ *').raise();
-}
-
 function brushed(event) {
   const selection = event.selection;
   d3.selectAll('circle').classed('selected', (d) =>
@@ -234,6 +226,15 @@ function brushed(event) {
   renderSelectionCount(selection);
   renderLanguageBreakdown(selection);
 }
+
+function createBrushSelector(svg) {
+// Update brush initialization to listen for events
+svg.call(d3.brush().on('start brush end', brushed));
+
+// Raise dots and everything after overlay
+svg.selectAll('.dots, .overlay ~ *').raise();
+}
+
 
 function isCommitSelected(commit) { 
   if (!selection) { return false; } const [x0, x1] = selection.map((d) => d[0]); 
