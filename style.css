@@ -228,3 +228,26 @@ path {
     fill: var(--color);
   }
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.stats dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: oklch(60% 3% 200); /* subtle gray-blue */
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25em;
+}
+
+.stats dd {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.1;
+}
