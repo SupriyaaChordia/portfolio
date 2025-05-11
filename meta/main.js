@@ -189,6 +189,8 @@ dots
   });
 }
 
+createBrushSelector(svg);
+
 let data = await loadData();
 let commits = processCommits(data);
 renderCommitInfo(data, commits);
@@ -234,7 +236,6 @@ svg.call(d3.brush().on('start brush end', brushed));
 // Raise dots and everything after overlay
 svg.selectAll('.dots, .overlay ~ *').raise();
 }
-
 
 function isCommitSelected(commit) { 
   if (!selection) { return false; } const [x0, x1] = selection.map((d) => d[0]); 
