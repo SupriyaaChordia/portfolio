@@ -162,7 +162,7 @@ function renderScatterPlot(data, commits) {
   const rScale = d3
   .scaleSqrt() // Change only this line
   .domain([minLines, maxLines])
-  .range([2, 30]);
+  .range([2, 10]);
 
 dots
   .selectAll('circle')
