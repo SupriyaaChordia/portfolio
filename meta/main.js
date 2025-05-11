@@ -35,7 +35,7 @@ function processCommits(data) {
           datetime.getSeconds() / 3600) * 4
         ) / 4,
         timezone,
-        totalLines: d3.sum(lines, d => d.length)
+        totalLines: lines.length
       };
 
       Object.defineProperty(ret, 'lines', {
