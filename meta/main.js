@@ -31,7 +31,11 @@ function processCommits(data) {
           datetime.getMinutes() / 60 +
           datetime.getSeconds() / 3600,
         timezone,
-        totalLines: lines.length,
+        totalLines: d3.rollup(
+          lines,
+          v => v.length,
+          d => d.file + ':' + d.line
+        ).size
       };
 
       Object.defineProperty(ret, 'lines', {
@@ -160,9 +164,10 @@ const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
   const cappedLines = sortedCommits.map(d => Math.min(d.totalLines, 50));
 
-  const rScale = d3.scaleSqrt()
-    .domain([minLines, maxLines])
-    .range([4, 30]);
+  const rScale = d3
+  .scaleSqrt() // Change only this line
+  .domain([minLines, maxLines])
+  .range([2, 30]);
 
 
   const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
