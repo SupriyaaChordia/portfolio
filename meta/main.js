@@ -124,7 +124,7 @@ function renderScatterPlot(data, commits) {
   .range([0, width])
   .nice();
 
-  const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
+  const yScale = d3.scaleSqrt().domain([0, 24]).range([height, 0]);
 
   // Update scales with new ranges
   xScale.range([usableArea.left, usableArea.right]);
@@ -162,7 +162,7 @@ function renderScatterPlot(data, commits) {
   const rScale = d3
   .scaleSqrt() // Change only this line
   .domain([minLines, maxLines])
-  .range([2, 10]);
+  .range([2, 15]);
 
 dots
   .selectAll('circle')
