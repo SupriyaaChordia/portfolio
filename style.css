@@ -273,6 +273,11 @@ dl.info dd {
   position: fixed;
   top: 1em;
   left: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0.5em rgba(175, 172, 172, 0.2);
+  border-radius: 0.25em;
+  backdrop-filter: blur(0.5em);
+  padding: 1em;
 }
 
 circle {
