@@ -161,7 +161,7 @@ const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
   const cappedLines = sortedCommits.map(d => Math.min(d.totalLines, 50));
 
   const rScale = d3.scaleSqrt()
-    .domain([minCapped, maxCapped])
+    .domain([minLines, maxLines])
     .range([4, 30]);
 
 
