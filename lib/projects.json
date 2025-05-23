@@ -56,7 +56,7 @@
     {
       "title": "Bike Traffic Visualization",
       "year": "2025",
-      "image": "https://unsplash.com/photos/beautiful-pattern-aerial-view-highway-road-network-intersection-traffic-can-use-for-import-export-or-transportation-concept-AVHOdo_2QYU",
+      "image": "https://plus.unsplash.com/premium_photo-1661881935010-410d2a636016?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "An interactive map visualization that combines Mapbox and D3.js to show Boston’s bike lane infrastructure and Bluebikes station traffic. Users can explore patterns in arrivals and departures across stations, filter activity by time of day using a slider, and see traffic flow visualized through circle size and color."
     },
     {
