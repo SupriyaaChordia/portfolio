@@ -54,10 +54,10 @@
       "description": "Compared data visualizations supporting opposing positions on the relationship between a government's annual environmental expenditure and a country's climate readiness."
     },
     {
-      "title": "Lorem ipsum dolor sit.",
-      "year": "2020",
-      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio."
+      "title": "Bike Traffic Visualization",
+      "year": "2025",
+      "image": "https://unsplash.com/photos/beautiful-pattern-aerial-view-highway-road-network-intersection-traffic-can-use-for-import-export-or-transportation-concept-AVHOdo_2QYU",
+      "description": "An interactive map visualization that combines Mapbox and D3.js to show Boston’s bike lane infrastructure and Bluebikes station traffic. Users can explore patterns in arrivals and departures across stations, filter activity by time of day using a slider, and see traffic flow visualized through circle size and color."
     },
     {
       "title": "Lorem ipsum dolor sit.",
