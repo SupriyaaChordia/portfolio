@@ -314,3 +314,57 @@ circle:hover {
 circle.selected {
   fill: #ff6b6b;
 }
+
+body.resume {
+  background-color: canvas;
+  max-width: 80ch;
+  margin-inline: auto;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+}
+
+body.resume h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+body.resume header p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+body.resume section {
+  margin-top: 2rem;
+}
+
+body.resume h2 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+body.resume h2:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+body.resume ul {
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+body.resume li {
+  margin-bottom: 0.5rem;
+}
+
+body.resume p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+body.resume em {
+  font-style: italic;
+}
