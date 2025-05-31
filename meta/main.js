@@ -289,54 +289,5 @@ async function init() {
   renderScatterPlot(data, commits);
 }
 
+// Start the visualization
 init();
-
-let commitProgress = 100;
-let timeScale;
-let commitMaxTime;
-let commits = [];
-
-async function init() {
-  const data = await d3.csv('loc.csv', (row) => ({
-    ...row,
-    datetime: new Date(row.datetime),
-  }));
-
-  commits = d3.groups(data, d => d.commit).map(([id, lines]) => {
-    const first = lines[0];
-    return {
-      id,
-      datetime: new Date(first.datetime),
-      url: 'https://github.com/vis-society/lab-7/commit/' + id,
-      totalLines: lines.length,
-    };
-  });
-
-  timeScale = d3
-    .scaleTime()
-    .domain([
-      d3.min(commits, (d) => d.datetime),
-      d3.max(commits, (d) => d.datetime),
-    ])
-    .range([0, 100]);
-
-  commitMaxTime = timeScale.invert(commitProgress);
-  document.getElementById("commit-progress").addEventListener("input", onTimeSliderChange);
-  onTimeSliderChange();
-}
-
-function onTimeSliderChange() {
-  const slider = document.getElementById("commit-progress");
-  const timeDisplay = document.getElementById("commit-time");
-
-  commitProgress = +slider.value;
-  commitMaxTime = timeScale.invert(commitProgress);
-
-  timeDisplay.textContent = commitMaxTime.toLocaleString(undefined, {
-    dateStyle: "long",
-    timeStyle: "short",
-  });
-}
-
-init();
-

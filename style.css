@@ -368,19 +368,3 @@ body.resume p {
 body.resume em {
   font-style: italic;
 }
-
-#filter-bar {
-  display: flex;
-  gap: 1em;
-  align-items: baseline;
-  width: 100%;
-  max-width: 1000px;
-  padding: 1em;
-}
-
-#commit-time {
-  display: block;
-  margin-top: 0.5em;
-  margin-left: auto;
-  color: grey;
-}
