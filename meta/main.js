@@ -282,22 +282,41 @@ function renderLanguageBreakdown(selection) {
   }
 }
 
-async function init() {
-  const data = await loadData();
-  commits = processCommits(data);
-  renderCommitInfo(data, commits);
-  renderScatterPlot(data, commits);
-}
-
-// Start the visualization
 init();
 
 let commitProgress = 100;
-let timeScale = d3
-  .scaleTime()
-  .domain([
-    d3.min(commits, (d) => d.datetime),
-    d3.max(commits, (d) => d.datetime),
-  ])
-  .range([0, 100]);
-let commitMaxTime = timeScale.invert(commitProgress);
+let timeScale;
+let commitMaxTime;
+
+async function init() {
+  const data = await loadData();
+  commits = processCommits(data);
+
+  timeScale = d3.scaleTime()
+    .domain([
+      d3.min(commits, (d) => d.datetime),
+      d3.max(commits, (d) => d.datetime),
+    ])
+    .range([0, 100]);
+
+  commitMaxTime = timeScale.invert(commitProgress);
+
+  renderCommitInfo(data, commits);
+  renderScatterPlot(data, commits);
+
+  document.getElementById("commit-progress").addEventListener("input", onTimeSliderChange);
+  onTimeSliderChange();
+}
+
+function onTimeSliderChange() {
+  const slider = document.getElementById("commit-progress");
+  const timeDisplay = document.getElementById("commit-time");
+
+  commitProgress = +slider.value;
+  commitMaxTime = timeScale.invert(commitProgress);
+
+  timeDisplay.textContent = commitMaxTime.toLocaleString(undefined, {
+    dateStyle: "long",
+    timeStyle: "short",
+  });
+}

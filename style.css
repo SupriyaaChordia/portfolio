@@ -369,7 +369,7 @@ body.resume em {
   font-style: italic;
 }
 
-div.commit-progress {
+div.commit-changes {
   flex: 1;
   align-items: baseline
 }
