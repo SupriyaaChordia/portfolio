@@ -1,6 +1,7 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
 
 let xScale, yScale;
+let colors = d3.scaleOrdinal(d3.schemeTableau10);
 let commits = [];
 
 async function loadData() {
@@ -351,7 +352,6 @@ function updateScatterPlot(data, commits) {
   // CHANGE: we should clear out the existing xAxis and then create a new one.
 
   const dots = svg.select('g.dots');
-  let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
   const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
   dots
