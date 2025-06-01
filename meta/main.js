@@ -115,7 +115,11 @@ function renderScatterPlot(data, commits) {
     .append('svg')
     .attr('viewBox', `0 0 ${width} ${height}`)
     .style('overflow', 'visible');
-  
+
+  svg.append('g')
+  .attr('transform', `translate(${usableArea.left}, 0)`)
+  .call(yAxis);
+
   xScale = d3
     .scaleTime()
     .domain(d3.extent(commits, (d) => d.datetime))
