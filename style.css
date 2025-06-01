@@ -368,3 +368,12 @@ body.resume p {
 body.resume em {
   font-style: italic;
 }
+
+div.commit-progress {
+  flex: 1;
+  align-items: baseline
+}
+
+time{
+  margin-left: auto
+}
