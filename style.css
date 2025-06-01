@@ -231,25 +231,26 @@ path {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+  gap: 1.5em;
+  align-items: baseline;
 }
 
+
 .stats dt {
-  grid-row: 1;
-  font-size: 0.8rem;
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #666;
   letter-spacing: 0.05em;
-  color: oklch(60% 5% 250);
-  margin-bottom: 0.25rem;
-  white-space: nowrap;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
 }
 
 .stats dd {
-  grid-row: 2;
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   margin: 0;
 }
+
 
 dl.info {
   display: grid;
@@ -277,16 +278,33 @@ dl.info dd {
 }
 
 .tooltip {
-  display: block;
   position: fixed;
   top: 1em;
   left: 1em;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 0.5em rgba(175, 172, 172, 0.2);
-  border-radius: 0.25em;
-  backdrop-filter: blur(0.5em);
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+  font-family: system-ui, sans-serif;
   padding: 1em;
+  border-radius: 0.4em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 15em;
+  z-index: 999;
+  line-height: 1.4;
 }
+
+.tooltip dt {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  color: #444;
+}
+
+.tooltip dd {
+  margin: 0 0 0.8em;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
 
 circle {
   transition: all 200ms, r calc(var(--r) * 100ms);
