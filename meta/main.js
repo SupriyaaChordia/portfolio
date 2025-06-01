@@ -132,18 +132,18 @@ function renderScatterPlot(data, commits) {
     .axisLeft(yScale)
     .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
 
-  // Add X axis
   svg
-    .append('g')
-    .attr('transform', `translate(0, ${usableArea.bottom})`)
-    .call(xAxis);
+  .append('g')
+  .attr('transform', `translate(0, ${usableArea.bottom})`)
+  .attr('class', 'x-axis')
+  .call(xAxis);
 
-  // Add Y axis
-  svg
-    .append('g')
-    .attr('transform', `translate(${usableArea.left}, 0)`)
-    .call(yAxis);
-
+svg
+  .append('g')
+  .attr('transform', `translate(${usableArea.left}, 0)`)
+  .attr('class', 'y-axis')
+  
+  .call(yAxis);
   const gridlines = svg
     .append('g')
     .attr('class', 'gridlines')
