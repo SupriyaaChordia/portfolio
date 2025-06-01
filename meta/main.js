@@ -419,6 +419,7 @@ function updateFileDisplay(filteredCommits) {
 }
 
 d3.select('#scatter-story')
+  .html('')
   .selectAll('.step')
   .data(commits)
   .join('div')
