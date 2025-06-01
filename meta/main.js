@@ -347,9 +347,11 @@ function updateScatterPlot(data, commits) {
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
   const rScale = d3.scaleSqrt().domain([minLines, maxLines]).range([2, 30]);
 
+  const xAxis = d3.axisBottom(xScale);
   const xAxisGroup = svg.select('g.x-axis');
   xAxisGroup.selectAll('*').remove();
   xAxisGroup.call(xAxis);
+
 
   // CHANGE: we should clear out the existing xAxis and then create a new one.
   svg
