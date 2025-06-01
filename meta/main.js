@@ -142,7 +142,7 @@ svg
   .append('g')
   .attr('transform', `translate(${usableArea.left}, 0)`)
   .attr('class', 'y-axis')
-  
+
   .call(yAxis);
   const gridlines = svg
     .append('g')
@@ -281,6 +281,7 @@ function renderLanguageBreakdown(selection) {
     `;
   }
 }
+let data;
 
 init();
 
