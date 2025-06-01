@@ -133,7 +133,7 @@ function renderScatterPlot(data, commits) {
   const yAxis = d3
     .axisLeft(yScale)
     .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
-    
+
   svg.append('g')
   .attr('transform', `translate(${usableArea.left}, 0)`)
   .call(yAxis);
@@ -284,6 +284,10 @@ function renderLanguageBreakdown(selection) {
 let data;
 
 init();
+console.log("Data loaded:", data.length);
+console.log("Commits processed:", commits.length);
+console.log("Chart element found:", document.getElementById('chart') !== null);
+
 
 let commitProgress = 100;
 let timeScale;
