@@ -284,9 +284,6 @@ function renderLanguageBreakdown(selection) {
 let data;
 
 init();
-console.log("Data loaded:", data.length);
-console.log("Commits processed:", commits.length);
-console.log("Chart element found:", document.getElementById('chart') !== null);
 
 
 let commitProgress = 100;
@@ -296,6 +293,9 @@ let commitMaxTime;
 async function init() {
   data = await loadData();
   commits = processCommits(data);
+  console.log("Data loaded:", data.length); // ✅ Moved inside
+  console.log("Commits processed:", commits.length);
+  console.log("Chart element found:", document.getElementById('chart') !== null);
 
   timeScale = d3.scaleTime()
     .domain([
@@ -304,7 +304,7 @@ async function init() {
     ])
     .range([0, 100]);
 
-  commitMaxTime = timeScale.invert(commitProgress);
+  // commitMaxTime = timeScale.invert(commitProgress);
 
   renderCommitInfo(data, commits);
   renderScatterPlot(data, commits);
