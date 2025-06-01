@@ -137,13 +137,7 @@ function renderScatterPlot(data, commits) {
   .attr('transform', `translate(0, ${usableArea.bottom})`)
   .attr('class', 'x-axis')
   .call(xAxis);
-
-svg
-  .append('g')
-  .attr('transform', `translate(${usableArea.left}, 0)`)
-  .attr('class', 'y-axis')
-
-  .call(yAxis);
+  
   const gridlines = svg
     .append('g')
     .attr('class', 'gridlines')
@@ -354,17 +348,6 @@ function updateScatterPlot(data, commits) {
 
 
   // CHANGE: we should clear out the existing xAxis and then create a new one.
-  svg
-    .append('g')
-    .attr('transform', `translate(0, ${usableArea.bottom})`)
-    .attr('class', 'x-axis') // new line to mark the g tag
-    .call(xAxis);
-
-  svg
-    .append('g')
-    .attr('transform', `translate(${usableArea.left}, 0)`)
-    .attr('class', 'y-axis') // just for consistency
-    .call(yAxis);
 
   const dots = svg.select('g.dots');
 
