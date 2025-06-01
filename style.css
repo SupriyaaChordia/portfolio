@@ -278,15 +278,33 @@ dl.info dd {
 }
 
 .tooltip {
-  display: block;
   position: fixed;
   top: 1em;
   left: 1em;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 0.5em rgba(175, 172, 172, 0.2);
-  border-radius: 0.25em;
-  backdrop-filter: blur(0.5em);
+  max-width: 18em;
   padding: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5em);
+  font-family: system-ui, sans-serif;
+  line-height: 1.4;
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.tooltip p {
+  margin: 0.25em 0;
+  font-size: 0.9rem;
 }
 
 circle {
