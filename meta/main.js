@@ -322,7 +322,7 @@ function onTimeSliderChange() {
     timeStyle: "short",
   });
   filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
-  renderScatterPlot(data, filteredCommits);
+  updateScatterPlot(data, filteredCommits);
 
 }
 
