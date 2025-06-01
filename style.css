@@ -277,6 +277,7 @@ dl.info dd {
 }
 
 .tooltip {
+  display: block;
   position: fixed;
   top: 1em;
   left: 1em;
