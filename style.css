@@ -232,6 +232,7 @@ path {
 .stats {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  text-align: center;
 }
 
 .stats dt {
@@ -245,7 +246,8 @@ path {
 }
 
 .stats dd {
-  /* grid-row: 2; */
+  grid-row: 2;
+  grid-column: auto;
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
