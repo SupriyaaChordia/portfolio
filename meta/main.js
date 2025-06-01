@@ -285,7 +285,7 @@ let timeScale;
 let commitMaxTime;
 
 async function init() {
-  const data = await loadData();
+  data = await loadData();
   commits = processCommits(data);
 
   timeScale = d3.scaleTime()
@@ -437,7 +437,10 @@ d3.select('#scatter-story')
 import scrollama from 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm';
 
 function onStepEnter(response) {
-  console.log(response);
+  const currentTime = response.element.__data__.datetime;
+  const filtered = commits.filter((d) => d.datetime <= currentTime);
+  updateScatterPlot(data, filtered);
+  updateFileDisplay(filtered);
 }
 
 const scroller = scrollama();
@@ -447,7 +450,3 @@ scroller
     step: '#scrolly-1 .step',
   })
   .onStepEnter(onStepEnter);
-
-function onStepEnter(response) {
-  console.log(response.element.__data__.datetime);
-}
