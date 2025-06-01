@@ -231,8 +231,13 @@ path {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: auto 1fr;
+  row-gap: 0.25em;
+  column-gap: 1em;
+  margin-bottom: 1em;
+  align-items: baseline;
 }
+
 
 .stats dt {
   grid-row: 1;
