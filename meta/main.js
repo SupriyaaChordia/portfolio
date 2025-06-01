@@ -116,9 +116,6 @@ function renderScatterPlot(data, commits) {
     .attr('viewBox', `0 0 ${width} ${height}`)
     .style('overflow', 'visible');
 
-  svg.append('g')
-  .attr('transform', `translate(${usableArea.left}, 0)`)
-  .call(yAxis);
 
   xScale = d3
     .scaleTime()
@@ -136,6 +133,10 @@ function renderScatterPlot(data, commits) {
   const yAxis = d3
     .axisLeft(yScale)
     .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
+    
+  svg.append('g')
+  .attr('transform', `translate(${usableArea.left}, 0)`)
+  .call(yAxis);
 
   svg
   .append('g')
