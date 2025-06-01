@@ -245,11 +245,10 @@ path {
 }
 
 .stats dd {
-  grid-row: 2;
+  /* grid-row: 2; */
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
-  grid-template-columns: repeat(6, 1fr);
 }
 
 dl.info {
