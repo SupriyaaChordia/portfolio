@@ -9,7 +9,7 @@
   {
     "title": "Book Recommendation and Genre Prediction System",
     "year": "2025",
-    "image": "https://unsplash.com/photos/open-book-lot-Oaqk7qqNh_c",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "Built an end-to-end machine learning pipeline to predict user book ratings and classify review genres, combining collaborative filtering (bias-aware and latent factor models) with TF-IDF text features and logistic regression, and applying validation splits, hyperparameter tuning, and early stopping to improve model accuracy and generalization.",
     "link": "https://github.com/AbhayAnandUCSD/CSE-258-Steam-Video-Data-/blob/main/workbook.ipynb"
   },
