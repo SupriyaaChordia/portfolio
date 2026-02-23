@@ -81,6 +81,13 @@ label {
 
 button {
   grid-column: 1 / -1;
+  background-color: oklch(75% 18% 270);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
 }
 
 input, textarea, button {
