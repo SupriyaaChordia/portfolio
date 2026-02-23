@@ -5,7 +5,7 @@
 }
 
 body {
-  font: 100%/1.5 system-ui;
+  font: 100%/1.5 'Trebuchet MS', sans-serif;
   display: block;
   margin: 8px;
   max-width: 100ch;
@@ -327,7 +327,7 @@ body.resume {
   max-width: 80ch;
   margin-inline: auto;
   padding: 2rem;
-  font-family: system-ui, sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 body.resume h1 {
