@@ -1,7 +1,7 @@
 :root {
-  --color-accent: oklch(65% 50% 0);
+  --color-accent: oklch(80% 20% 15);
   color-scheme: light dark;
-  --border-color: oklch(50% 10% 200 / 40%);
+  --border-color: oklch(75% 15% 280 / 40%);
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-  --border-color: oklch(50% 10% 200 / 40%);
+  --border-color: oklch(75% 15% 280 / 40%);
   display: flex;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -50,7 +50,7 @@ a.current {
   padding: 0.5em;
   margin-bottom: 0.3em;
   border-bottom: 0.4em;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: oklch(75% 18% 270);
   border-bottom-style: solid;  
   padding-bottom: 0.5em;
   font-weight: bold;
@@ -222,7 +222,7 @@ path {
 }
 
 .selected {
-  --color: oklch(60% 45% 0) !important;
+  --color: oklch(75% 25% 15) !important;
 
   &:is(path) {
     fill: var(--color);
@@ -239,7 +239,7 @@ path {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: oklch(60% 5% 250);
+  color: oklch(70% 8% 270);
   margin-bottom: 0.25rem;
   white-space: nowrap;
 }
