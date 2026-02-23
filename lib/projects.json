@@ -1,9 +1,10 @@
 [
     {
-      "title": "Exploring the Relationships Between The Calories in a Recipe vs. the Average Rating",
+      "title": "Calorie Impact on Recipe Ratings",
       "year": "2025",
       "image": "https://images.unsplash.com/photo-1670164745494-30747c120652?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Exploring the relationship between nutrients and ratings in food recipes offers invaluable insights for both health-conscious individuals and culinary enthusiasts."
+      "description": "Exploring the relationship between nutrients and ratings in food recipes offers invaluable insights for both health-conscious individuals and culinary enthusiasts.",
+      "link": "https://raghavdewangan.github.io/RecipeDatasetEDA/"
     },
     {
       "title": "N-Gram language Model",
@@ -33,13 +34,15 @@
       "title": "The Great British Bake Off Analysis",
       "year": "2023",
       "image": "https://images.unsplash.com/photo-1683395826489-911a209cbca8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Analyzed the Great British Bake Off dataset to explore the relationship between contestants' characteristics and their success in the competition."
+      "description": "Analyzed the Great British Bake Off dataset to explore the relationship between contestants' characteristics and their success in the competition.",
+      "link": "https://github.com/siyajatia/dsc-10-/blob/main/FinalProject%20(1).ipynb"
     },
     {
       "title": "Taylor Swift Analysis and Reccommendation Tool",
       "year": "2023",
       "image": "https://images.unsplash.com/photo-1587204714992-2c93329aaa3a?q=80&w=2769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Developed data visualizations, a song recommendation engine, lyric search functionality, and keyword analysis for Taylor Swift’s discography."
+      "description": "Developed data visualizations, a song recommendation engine, lyric search functionality, and keyword analysis for Taylor Swift’s discography.",
+      "link": "https://github.com/siyajatia/dsc-10-/blob/main/midterm-project%20(1).ipynb"
     },
     {
       "title": "Nutritional Analysis of Grocery Stores",
@@ -57,13 +60,29 @@
       "title": "Bike Traffic Visualization",
       "year": "2025",
       "image": "https://plus.unsplash.com/premium_photo-1661881935010-410d2a636016?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "An interactive map visualization that combines Mapbox and D3.js to show Boston’s bike lane infrastructure and Bluebikes station traffic. Users can explore patterns in arrivals and departures across stations, filter activity by time of day using a slider, and see traffic flow visualized through circle size and color."
+      "description": "An interactive map visualization that combines Mapbox and D3.js to show Boston’s bike lane infrastructure and Bluebikes station traffic. Users can explore patterns in arrivals and departures across stations, filter activity by time of day using a slider, and see traffic flow visualized through circle size and color.",
+      "link": "https://supriyaachordia.github.io/Tour-de-Data/"
     },
     {
       "title": "Temperature-Driven Mice Activity Visualization",
       "year": "2025",
       "image": "https://images.unsplash.com/photo-1657656206271-12b0b877a47b?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "Built an interactive data visualization to analyze how temperature influences mice's daily activity patterns, implementing dynamic view toggles and animation controls to explore behavioral shifts across thermal conditions and model time-series relationships."
+      "description": "Built an interactive data visualization to analyze how temperature influences mice's daily activity patterns, implementing dynamic view toggles and animation controls to explore behavioral shifts across thermal conditions and model time-series relationships.",
+      "link": "https://dkanodia.github.io/dsc106_project3/"
+    },
+    {
+      "title": "3D Hospital Visualization",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1611587266737-cc128ffe2946?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Developed an interactive 3D hospital environment using D3.js and GLTF models to visualize patient journeys across clinical spaces, integrating condition-based navigation and responsive spatial controls to enhance user exploration.",
+      "link": "https://github.com/subika-haider/code_blueprints"
+    },
+    {
+      "title": "Steam Game Recommendation System",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Built a hybrid recommendation system for Steam games using metadata, review statistics, collaborative filtering, matrix factorization, and learning-to-rank models to personalize game suggestions.",
+      "link": "https://github.com/AbhayAnandUCSD/CSE-258-Steam-Video-Data-/blob/main/workbook.ipynb"
     }
   ]
   

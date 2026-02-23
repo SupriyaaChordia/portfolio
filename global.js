@@ -91,9 +91,18 @@ select.addEventListener("input", function (event) {
     containerElement.innerHTML = '';
     for (const p of project) {
       const article = document.createElement('article');
+      let titleHTML = `<${headingLevel}>${p.title}</${headingLevel}>`;
+      let imageHTML = `<img src="${p.image}" alt="${p.title}">`;
+      
+      // Wrap in links if link exists
+      if (p.link) {
+        titleHTML = `<a href="${p.link}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;"><${headingLevel}>${p.title}</${headingLevel}></a>`;
+        imageHTML = `<a href="${p.link}" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none;"><img src="${p.image}" alt="${p.title}"></a>`;
+      }
+      
       article.innerHTML = `
-      <${headingLevel}>${p.title}</${headingLevel}>
-      <img src="${p.image}" alt="${p.title}">
+      ${titleHTML}
+      ${imageHTML}
       <div>
       <p>${p.description}</p>
       <span class = "projectyear">${p.year}</span>
