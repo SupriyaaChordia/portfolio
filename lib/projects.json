@@ -11,7 +11,7 @@
     "year": "2025",
     "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "Built an end-to-end machine learning pipeline to predict user book ratings and classify review genres, combining collaborative filtering (bias-aware and latent factor models) with TF-IDF text features and logistic regression, and applying validation splits, hyperparameter tuning, and early stopping to improve model accuracy and generalization.",
-    "link": "https://github.com/AbhayAnandUCSD/CSE-258-Steam-Video-Data-/blob/main/workbook.ipynb"
+    "link": "https://github.com/SupriyaaChordia/book-recommendation-system/blob/main/Book_reccomender.py"
   },
   {
     "title": "Temperature-Driven Mice Activity Visualization",
@@ -49,39 +49,11 @@
     "link": "https://raghavdewangan.github.io/RecipeDatasetEDA/"
   },
   {
-    "title": "N-Gram language Model",
-    "year": "2025",
-    "image": "https://plus.unsplash.com/premium_photo-1666739032615-ecbd14dfb543?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "Built and analyzed language models by dissecting a text corpus, implementing uniform and unigram models, and creating an N-gram model for probability computation and text generation.",
-    "link": "https://github.com/SupriyaaChordia/DSC-80-Project-3/blob/main/project.py"
-  },
-  {
-    "title": "Loan Applications",
-    "year": "2025",
-    "image": "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "Explored how various borrower characteristics are related to one another, in an attempt to better understand the complexity behind loans.",
-    "link": "https://github.com/SupriyaaChordia/DSC-80-Project-2/blob/main/project.py"
-  },
-  {
     "title": "MTS Bus Transit Network Analysis",
     "year": "2025",
     "image": "https://plus.unsplash.com/premium_photo-1676573201639-79bb6d344ffd?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "Conducted a detailed analysis of the bus transit network, allowing for visualization of routes, optimization of travel times, and understanding of transit patterns.",
     "link": "https://github.com/SupriyaaChordia/DSC-80-Project-1/blob/main/project.py"
-  },
-  {
-    "title": "Image Transformations",
-    "year": "2024",
-    "image": "https://plus.unsplash.com/premium_photo-1736056427064-9b1c015a71f7?q=80&w=2604&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "Implemented core image processing functionality in Python, including brightness adjustment, rotation, blurring, and K-Nearest Neighbors (KNN) classification of images based on pixel similarity.",
-    "link": "https://github.com/SupriyaaChordia/DSC20/blob/main/project.py"
-  },
-  {
-    "title": "The Great British Bake Off Analysis",
-    "year": "2024",
-    "image": "https://images.unsplash.com/photo-1683395826489-911a209cbca8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "Analyzed the Great British Bake Off dataset to explore the relationship between contestants' characteristics and their success in the competition.",
-    "link": "https://github.com/siyajatia/dsc-10-/blob/main/FinalProject%20(1).ipynb"
   },
   {
     "title": "Taylor Swift Analysis and Reccommendation Tool",
