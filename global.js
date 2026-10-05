@@ -112,11 +112,6 @@ select.addEventListener("input", function (event) {
     }
   }
 
-  export async function fetchGitHubData(username) {
-    // return statement here
-    return fetchJSON(`https://api.github.com/users/${username}`);
-  }
-  
   function renderTooltipContent(commit) {
   const link = document.getElementById('commit-link');
   const date = document.getElementById('commit-date');
