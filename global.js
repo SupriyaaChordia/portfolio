@@ -108,6 +108,20 @@ select.addEventListener("input", function (event) {
       <span class = "projectyear">${p.year}</span>
       </div>
       `;
+      if (Array.isArray(p.links) && p.links.length) {
+        const actions = document.createElement('p');
+        actions.className = 'project-links';
+        actions.style.cssText = 'display: flex; flex-wrap: wrap; gap: 1rem;';
+        for (const item of p.links) {
+          const link = document.createElement('a');
+          link.href = item.url;
+          link.textContent = item.label;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          actions.appendChild(link);
+        }
+        article.appendChild(actions);
+      }
       containerElement.appendChild(article);
     }
   }
